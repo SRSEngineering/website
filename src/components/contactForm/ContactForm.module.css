@@ -1,0 +1,107 @@
+#outerContainer{
+    /* background-color: #E5F0FD; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#innerContainer{
+    /* width: 1200px; */
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 50px 20px;
+}
+
+#title{
+    padding-top: 20px;
+    font-size: 30px;
+    color: #266386;
+}
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+#contactForm input{
+    border: none;
+    font-size: 22px;
+    height: 40px;
+    border: solid 1px #266386;
+
+}
+
+#nameSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#officeemail{
+    text-decoration: underline
+}
+
+#email{width: 100%;}
+
+.formItem{
+    display: flex;
+    flex-direction: column;
+    color: #266386;
+    font-size: 22px;
+    font-weight: 700;
+    width: 48%;
+    padding: 15px 0;
+    
+}
+
+.formItem label{
+    padding:0 0 5px 5px;
+}
+
+#help{
+    width: 100%;
+}
+
+#help textarea{
+    font-size: 20px;
+    border: none;
+    resize: none;
+    height: 200px;
+    border: solid 1px #266386;
+}
+
+#submitHolder{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#submitButton{
+    font-size: 22px;
+    background-color: #99CCFF;
+    font-weight: 700;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#phone{
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    #nameSection{
+        flex-direction: column;
+    }
+
+    .formItem, #email, #help, #submitHolder{
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contactForm{
+        width: 98%;
+    }
+    
+}
